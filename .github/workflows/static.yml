@@ -38,7 +38,7 @@ jobs:
       - name: Create dist folder
         run: mkdir dist
       - name: Build
-        run: wasm-pack build
+        run: wasm-pack build --target web
       - name: Copy wasm build
         run: cp -r ./pkg ./dist
       - name: Copy index.html
